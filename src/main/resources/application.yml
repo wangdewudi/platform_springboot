@@ -1,0 +1,22 @@
+
+server:
+  port: 8080
+  ssl:
+    key-store: classpath:4441295_wcxy.asia.pfx
+    key-store-password: 4q0PPI5V
+    key-store-type: PKCS12
+
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/wcxy?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=UTC
+    username: root
+    password: wdq1946.
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+
+mapper:
+  mappers:
+    - tk.mybatis.mapper.common.Mapper
+
+  notEmpty: true
